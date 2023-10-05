@@ -6,13 +6,18 @@ const formatDataClasses = (dataClass) => {
         data.split('-').map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
     );
 };
+
+
 const BreachedInfo = ({data,ind}) => {
 
     // console.log(data.logos[ind]);
     const [showDescription,setShowDescription]=useState(false);
     const dataClasses = formatDataClasses(data.breaches[ind].DataClasses).join(', ');
     // console.log(dataClasses);
-    // console.log(data.breaches[ind]);
+    // console.log(data.breaches[ind])
+    // const handleDescriptionClick = (e) => {
+    //     e.stopPropagation(); // Stop event propagation to prevent immediate closing
+    // };;
 
     const date = new Date(data.breaches[ind].BreachDate);
     return ( 
@@ -29,7 +34,7 @@ const BreachedInfo = ({data,ind}) => {
                 </span>
             </p>
             <p className={classes.moreInfo} onClick={()=>setShowDescription(true)}><u>More Info</u></p>
-            {showDescription&&<div className={classes.descriptionOverlay}>
+            {showDescription&&<div className={classes.descriptionOverlay} onClick={()=>setShowDescription(false)}>
                 <div className={classes.description}>
                     <div className={classes.top}>Description</div>
                     <div className={classes.descriptionInfo}  dangerouslySetInnerHTML={{__html: data.breaches[ind].Description}}></div>

@@ -269,9 +269,17 @@ p{
     font-size: 3rem;
     color: #ffc929;
 }
+@media only screen and (max-width:1100px){
+    .description{
+        width: 40%;
+    }
+}
 @media only screen and (max-width:700px){
     .loading{
         font-size: 3rem;
+    }
+    .description{
+        width: 60%;
     }
 }
 @media only screen and (max-width:610px){
@@ -332,5 +340,8 @@ p{
     }
     .noBreach p p span{
         font-size: 3.5rem;
+    }
+    .description{
+        width: 70%;
     }
 }

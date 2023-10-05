@@ -279,10 +279,36 @@ p{
         font-weight: 700;
         font-size: 2rem;
     }
+    .noBreach{
+        font-size: 2rem;
+    }
+    .noBreach p{
+        top: 50%;
+    }
+    .noBreach p p{
+        font-size: 4rem;
+    }
+    .noBreach p p span{
+        font-size: 5rem;
+    }
+}
+@media only screen and (max-width:550px){
+    .noBreach{
+        font-size: 2rem;
+    }
+    .noBreach p p{
+        font-size: 3rem;
+    }
+    .noBreach p p span{
+        font-size: 4rem;
+    }
 }
 @media only screen and (max-width:520px){
     .loading{
         font-size: 2.5rem;
+    }
+    .breachCount span{
+        font-size: 2rem;
     }
 }
 @media only screen and (max-width:450px){
@@ -297,8 +323,14 @@ p{
         font-size: 1.5rem;
     }
 }
-@media only screen and (max-width:410px){
+@media only screen and (max-width:420px){
     .loading{
         font-size: 2rem;
+    }
+    .noBreach p p{
+        font-size: 2.5rem;
+    }
+    .noBreach p p span{
+        font-size: 3.5rem;
     }
 }

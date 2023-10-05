@@ -318,6 +318,11 @@ p{
     .breachCount span{
         font-size: 2rem;
     }
+    .description{
+        width: 70%;
+        font-size: 1rem;
+        top: 10%;
+    }
 }
 @media only screen and (max-width:450px){
     .breachCount{

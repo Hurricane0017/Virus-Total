@@ -283,6 +283,12 @@ p{
     }
 }
 @media only screen and (max-width:610px){
+    .breachCount{
+        font-size: 1.5rem;
+    }
+    .breachCount span{
+        font-size: 2rem;
+    }
     .error{
         font-weight: 700;
         font-size: 2rem;
@@ -324,6 +330,7 @@ p{
         top: 10%;
     }
 }
+
 @media only screen and (max-width:450px){
     .breachCount{
         font-size: 1.5rem;
@@ -341,10 +348,16 @@ p{
         font-size: 2rem;
     }
     .noBreach p p{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .noBreach p p span{
-        font-size: 3.5rem;
+        font-size: 3rem;
+    }
+    .breachCount{
+        font-size: 1.2rem;
+    }
+    .breachCount span{
+        font-size: 1.5rem;
     }
     .description{
         width: 70%;

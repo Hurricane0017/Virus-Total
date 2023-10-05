@@ -11,7 +11,7 @@ const ScanDetails = (props) => {
     const [data, setData] = useState({});
     const [loading, setLoading] = useState(1);
     const apiUrl = 'https://monitor.firefox.com/api/v1/scan';
-    const proxyUrl = 'http://localhost:8080/';
+    const proxyUrl = 'https://haveibeenpawned-proxyserver.onrender.com/';
     // console.log(data.breaches);
 
     useEffect(() => {

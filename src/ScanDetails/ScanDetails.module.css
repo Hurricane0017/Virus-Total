@@ -269,3 +269,36 @@ p{
     font-size: 3rem;
     color: #ffc929;
 }
+@media only screen and (max-width:700px){
+    .loading{
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width:610px){
+    .error{
+        font-weight: 700;
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width:520px){
+    .loading{
+        font-size: 2.5rem;
+    }
+}
+@media only screen and (max-width:450px){
+    .breachCount{
+        font-size: 1.5rem;
+    }
+    .breachCount span{
+        font-size: 2rem;
+    }
+    .error{
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width:410px){
+    .loading{
+        font-size: 2rem;
+    }
+}
